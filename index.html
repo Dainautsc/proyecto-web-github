@@ -5,24 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acción Climática y Contaminación</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; margin: 0; padding: 0; background: linear-gradient(135deg, #e8f5e9, #c8e6c9); color: #2c3e50; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
-        .card { background: #ffffff; padding: 40px; border-radius: 15px; box-shadow: 0 8px 20px rgba(0,0,0,0.1); max-width: 650px; width: 100%; text-align: center; }
-        h1 { color: #2e7d32; margin-bottom: 10px; }
-        p { color: #555; margin-bottom: 30px; }
-        .menu-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 25px; }
-        a { display: block; padding: 12px 15px; background: #4caf50; color: #fff; text-decoration: none; border-radius: 8px; font-weight: bold; transition: background 0.3s, transform 0.2s; }
-        a:hover { background: #388e3c; transform: translateY(-2px); }
+        * { box-sizing: border-box; }
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            line-height: 1.6; 
+            margin: 0; 
+            padding: 20px; 
+            background: linear-gradient(135deg, #1b5e20, #2e7d32, #81c784); 
+            color: #2c3e50; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            min-height: 100vh; 
+        }
+        .card { 
+            background: #ffffff; 
+            padding: 50px 40px; 
+            border-radius: 20px; 
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2); 
+            max-width: 700px; 
+            width: 100%; 
+            text-align: center; 
+            border-top: 6px solid #4caf50;
+        }
+        .badge {
+            background: #e8f5e9;
+            color: #2e7d32;
+            padding: 6px 15px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        h1 { color: #1b5e20; margin-top: 0; font-size: 2.2rem; margin-bottom: 15px; }
+        p { color: #555; margin-bottom: 35px; font-size: 1.05rem; }
+        .menu-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-bottom: 25px; }
+        a { 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 16px 20px; 
+            background: #f1f8e9; 
+            color: #2e7d32; 
+            text-decoration: none; 
+            border-radius: 12px; 
+            font-weight: bold; 
+            border: 2px solid #c8e6c9;
+            transition: all 0.3s ease; 
+        }
+        a:hover { 
+            background: #4caf50; 
+            color: #fff; 
+            border-color: #4caf50;
+            transform: translateY(-3px); 
+            box-shadow: 0 5px 15px rgba(76, 175, 80, 0.3);
+        }
+        @media (max-width: 600px) { .menu-grid { grid-template-columns: 1fr; } }
     </style>
 </head>
 <body>
     <div class="card">
-        <h1>Proyecto: Clima y Contaminación</h1>
-        <p>Conciencia ambiental y desarrollo web colaborativo. Explora las secciones del proyecto:</p>
+        <span class="badge">🌍 ODS 13 • Acción Climática</span>
+        <h1>Clima y Contaminación</h1>
+        <p>Explora este espacio interactivo diseñado para concientizar sobre el impacto ambiental actual y las medidas prácticas para mitigar el deterioro de nuestro planeta.</p>
         <div class="menu-grid">
-            <a href="seccion1.html">Sección 1: Cambio Climático</a>
-            <a href="seccion2.html">Sección 2: Contaminación</a>
-            <a href="seccion3.html">Sección 3: Consecuencias</a>
-            <a href="seccion4.html">Sección 4: Soluciones</a>
+            <a href="seccion1.html">🌱 1. Cambio Climático</a>
+            <a href="seccion2.html">🏭 2. Contaminación</a>
+            <a href="seccion3.html">⚠️ 3. Consecuencias</a>
+            <a href="seccion4.html">💡 4. Soluciones</a>
         </div>
     </div>
 </body>
