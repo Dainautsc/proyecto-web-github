@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sección 2: Contaminación</title>
+    <title>Sección 3</title>
     <style>
         * { box-sizing: border-box; }
         body { 
@@ -37,16 +37,8 @@
             text-transform: uppercase;
         }
         h1 { color: #1b5e20; margin-top: 15px; font-size: 1.8rem; }
-        .content-box {
-            background: #fefefe;
-            border: 1px solid #e0e0e0;
-            padding: 15px 20px;
-            margin: 20px 0;
-            border-radius: 8px;
-            box-shadow: inset 0 2px 4px rgba(0,0,0,0.02);
-        }
         .nav-buttons { display: flex; justify-content: space-between; margin-top: 35px; gap: 15px; }
-        a { 
+        .btn { 
             padding: 12px 22px; 
             background: #4caf50; 
             color: #fff; 
@@ -54,29 +46,24 @@
             border-radius: 10px; 
             font-weight: bold; 
             font-size: 14px; 
+            border: none;
+            cursor: pointer;
+            display: inline-block;
             transition: all 0.3s ease; 
         }
-        a:hover { background: #388e3c; transform: translateY(-2px); box-shadow: 0 4px 10px rgba(0,0,0,0.15); }
+        .btn:hover { background: #388e3c; transform: translateY(-2px); box-shadow: 0 4px 10px rgba(0,0,0,0.15); }
         .btn-home { background: #455a64; }
-        .btn-home:hover { background: #263238; }
     </style>
 </head>
 <body>
     <div class="card">
-        <span class="badge">Sección 2 de 4</span>
-        <h1>El Problema de la Contaminación</h1>
-        <p>La contaminación del aire, del agua y de los suelos representa una amenaza directa y silenciosa para la salud de los seres vivos y el equilibrio de los ecosistemas en todo el planeta.</p>
-        <div class="content-box">
-            <ul>
-                <li><strong>Contaminación atmosférica:</strong> Emisiones de fábricas y vehículos.</li>
-                <li><strong>Contaminación hídrica:</strong> Vertidos industriales y plásticos en océanos.</li>
-                <li><strong>Contaminación del suelo:</strong> Uso excesivo de químicos y mala gestión de residuos.</li>
-            </ul>
-        </div>
+        <span class="badge">Sección 3 de 4</span>
+        <h1>Soluciones y Acciones</h1>
+        <p>Implementar energías limpias, reducir el consumo de plásticos de un solo uso y fomentar el reciclaje son pasos fundamentales para mitigar los daños al medio ambiente.</p>
         <div class="nav-buttons">
-            <a href="seccion1.html">⬅ Anterior</a>
-            <a class="btn-home" href="index.html">🏠 Menú Principal</a>
-            <a href="seccion3.html">Siguiente ➔</a>
+            <button onclick="location.href='seccion2.html'" class="btn">⬅ Anterior</button>
+            <button onclick="location.href='index.html'" class="btn btn-home">🏠 Menú Principal</button>
+            <button onclick="location.href='seccion4.html'" class="btn">Siguiente ➔</button>
         </div>
     </div>
 </body>
