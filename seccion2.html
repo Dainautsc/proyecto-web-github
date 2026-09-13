@@ -54,7 +54,7 @@
             margin-bottom: 8px;
         }
         .nav-buttons { display: flex; justify-content: space-between; margin-top: 35px; gap: 15px; }
-        a { 
+        .btn { 
             padding: 12px 22px; 
             background: #4caf50; 
             color: #fff; 
@@ -62,9 +62,12 @@
             border-radius: 10px; 
             font-weight: bold; 
             font-size: 14px; 
+            border: none;
+            cursor: pointer;
+            display: inline-block;
             transition: all 0.3s ease; 
         }
-        a:hover { background: #388e3c; transform: translateY(-2px); box-shadow: 0 4px 10px rgba(0,0,0,0.15); }
+        .btn:hover { background: #388e3c; transform: translateY(-2px); box-shadow: 0 4px 10px rgba(0,0,0,0.15); }
         .btn-home { background: #455a64; }
         .btn-home:hover { background: #263238; }
     </style>
@@ -82,9 +85,9 @@
             </ul>
         </div>
         <div class="nav-buttons">
-            <a href="seccion1.html">⬅ Anterior</a>
-            <a class="btn-home" href="index.html">🏠 Menú Principal</a>
-            <a href="seccion3.html">Siguiente ➔</a>
+            <a href="seccion1.html" class="btn">⬅ Anterior</a>
+            <a href="index.html" class="btn btn-home">🏠 Menú Principal</a>
+            <button onclick="location.href='seccion3.html'" class="btn">Siguiente ➔</button>
         </div>
     </div>
 </body>
